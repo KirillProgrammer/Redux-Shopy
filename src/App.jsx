@@ -5,6 +5,7 @@ import Main from './components/pages/main/Main';
 import './app.scss';
 import Cart from './components/pages/cart/Cart';
 import Favorite from './components/pages/favorite/favorite';
+import "./destyle.css";
 
 function App() {
 

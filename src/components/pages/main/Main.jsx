@@ -5,7 +5,7 @@ import './main.scss';
 
 function Main() {
 
-  const items = useSelector((state) => state.filter.itemsFilter);
+  const items = useSelector((state) => state.itemsAll);
 
   return (
     <div className='main'>
