@@ -13,19 +13,19 @@ const initialData = {
     },
     {
       id: 2,
-      name: 'Iphone',
+      name: 'Iphone2',
       image: cardImage,
       price: 20000,
     },
     {
       id: 3,
-      name: 'Iphone',
+      name: 'Iphone3',
       image: cardImage,
       price: 25000,
     },
     {
       id: 4,
-      name: 'Iphone',
+      name: 'Iphone4',
       image: cardImage,
       price: 31000,
       unavaible: 'Нет на складе',
@@ -33,13 +33,13 @@ const initialData = {
     },
     {
       id: 5,
-      name: 'Iphone',
+      name: 'Iphone5',
       image: cardImage,
       price: 45000,
     },
     {
       id: 6,
-      name: 'Iphone',
+      name: 'Iphone6',
       image: cardImage,
       price: 8000,
       unavaible: 'Продано',
@@ -60,6 +60,6 @@ export const rootReducer = createReducer(initialData, (builder) => {
       state.itemsFavorite.push(action.payload);
     })
     .addCase('removeFromFavorite', (state, action) => {
-      state.itemsFavorite = state.itemsFavorite.filter((car) => car.id !== action.payload.id);
+      state.itemsFavorite = state.itemsFavorite.filter((phone) => phone.id !== action.payload);
     })
 });
