@@ -9,3 +9,9 @@ nav {
     text-decoration: none;
   }
 }
+
+@media (min-width: 320px) {
+	nav {
+		gap: 15px
+	}
+}

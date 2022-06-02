@@ -39,7 +39,7 @@ export default function MediaCard({ id, image, name, price, unavaible }) {
 
   return (
     <Card sx={{ maxWidth: 345 }} className={ unavaible ? "unavaible" : "" }>
-      <CardMedia
+      <CardMedia className="img__card"
         component="img"
         height="200"
         image={ image }
